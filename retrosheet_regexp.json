@@ -1,0 +1,551 @@
+{
+    "items": [
+        {
+            "regexp": "^\\d\\d",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "field_out"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "^[A-Z0-9]{0,3}[^\\w]F",
+            "outcomes": [
+                {
+                    "attr": "batted_ball_type",
+                    "val": "fly_ball"
+                }
+            ]
+        },
+        {
+            "regexp": "^\\d[^\\d]",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "field_out"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "fly_ball"
+                }
+            ]
+        },
+        {
+            "regexp": "^[A-Z0-9]{0,3}[^\\w]L",
+            "outcomes": [
+                {
+                    "attr": "batted_ball_type",
+                    "val": "line_drive"
+                }
+            ]
+        },
+        {
+            "regexp": "^[A-Z0-9]{0,3}[^\\w]G",
+            "outcomes": [
+                {
+                    "attr": "batted_ball_type",
+                    "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "^[A-Z0-9]{0,3}[^\\w]P",
+            "outcomes": [
+                {
+                    "attr": "batted_ball_type",
+                    "val": "popup"
+                }
+            ]
+        },
+        {
+            "regexp": "^[A-Z0-9]{0,3}[^\\w]B",
+            "outcomes": [
+                {
+                    "attr": "batted_ball_type",
+                    "val": "bunt"
+                }
+            ]
+        },
+        {
+            "regexp": "^S",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "single"
+                }
+            ]
+        },
+        {
+            "regexp": "^D",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "double"
+                }
+            ]
+        },
+        {
+            "regexp": "^T",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "triple"
+                }
+            ]
+        },
+        {
+            "regexp": "^H[R^P]*[\\W\\d]",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "home_run"
+                }
+            ]
+        },
+        {
+            "regexp": "DGR",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "ground_rule_double"
+                }
+            ]
+        },
+        {
+            "regexp": "^E[\\d]",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "field_error"
+                }
+            ]
+        },
+        {
+            "regexp": "^FC",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "fielders_choice"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "^HP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "hit_by_pitch"
+                }
+            ]
+        },
+        {
+            "regexp": "^K",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "strikeout"
+                }
+            ]
+        },
+        {
+            "regexp": "^W[^P]",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "walk"
+                }
+            ]
+        },
+        {
+            "regexp": "^I[W]*",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "intentional_walk"
+                }
+            ]
+        },
+        {
+            "regexp": "[\\W]DP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "double_play"
+                }
+            ]
+        },
+        {
+            "regexp": "[\\W]TP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "triple_play"
+                }
+            ]
+        },
+        {
+            "regexp": "[\\W]SF",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "sac_fly"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "fly_ball"
+                }
+            ]
+        },
+        {
+            "regexp": "FO",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "force_out"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "SH",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "sac_bunt"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "bunt"
+                }
+            ]
+        },
+        {
+            "regexp": "GDP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "double_play"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "LDP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "double_play"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "line_drive"
+                }
+            ]
+        },
+        {
+            "regexp": "GTP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "triple_play"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "LTP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "triple_play"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "line_drive"
+                }
+            ]
+        },
+        {
+            "regexp": "99",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "field_out"
+                }
+            ]
+        },
+        {
+            "regexp": "^C[\\W]",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "catcher_interference"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                },
+                {
+                    "attr": "first_fielder_pos",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^[PO]*CS2",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "caught_stealing_2b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^[PO]*CS3",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "caught_stealing_3b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^[PO]*CSH",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "caught_stealing_home"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^WP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "wild_pitch"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^PB",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "passed_ball"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^OA",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "runner_advance"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^PO1",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_1b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^PO3",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_3b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^PO2",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_2b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^SB2",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "stolen_base_2b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^SB3",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "stolen_base_3b"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^SBH",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "stolen_base_home"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^DI",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "defensive_indifference"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },
+        {
+            "regexp": "^BK",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "balk"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        }
+    ]
+}
