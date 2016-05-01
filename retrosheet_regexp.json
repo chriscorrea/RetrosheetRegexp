@@ -72,6 +72,16 @@
             ]
         },
         {
+            "regexp": "^IF",
+            "description": "infield fly",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "field_out"
+                }
+            ]
+        },
+        {
             "regexp": "^S",
             "outcomes": [
                 {
@@ -100,6 +110,16 @@
         },
         {
             "regexp": "^H[R^P]*[\\W\\d]",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "home_run"
+                }
+            ]
+        },
+        {
+            "regexp": "^IPH*[\\W\\d]",
+            "description": "inside the park home run",
             "outcomes": [
                 {
                     "attr": "event_type",
@@ -241,6 +261,19 @@
                 {
                     "attr": "batted_ball_type",
                     "val": "groundball"
+                }
+            ]
+        },
+        {
+            "regexp": "FDP",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "double_play"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": "fly_ball"
                 }
             ]
         },
@@ -396,6 +429,7 @@
         },
         {
             "regexp": "^OA",
+            "description": "base runner advance that is not covered by one of the other codes",
             "outcomes": [
                 {
                     "attr": "event_type",
@@ -462,6 +496,77 @@
                 }
             ]
         },
+        {
+            "regexp": "^POCS1",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_1b_caught_stealing"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },        
+        {
+            "regexp": "^POCS2",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_2b_caught_stealing"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },        
+        {
+            "regexp": "^POCS3",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_3b_caught_stealing"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },        
+        {
+            "regexp": "^PASS",
+            "description": "a runner passed another runner and was called out",
+            "outcomes": [
+                {
+                    "attr": "event_type",
+                    "val": "picked_off_3b_caught_stealing"
+                },
+                {
+                    "attr": "event_class",
+                    "val": "baserunning"
+                },
+                {
+                    "attr": "batted_ball_type",
+                    "val": ""
+                }
+            ]
+        },        
+
+
         {
             "regexp": "^SB2",
             "outcomes": [
